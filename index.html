@@ -53,31 +53,22 @@
                 class="info">info@devstudio.com</a></li>
             <li class="contact-linklist-item">
                 <a href="tel:+110001111111" class="info">+11 (000) 111-11-11</a></li>
-       
-<div class="hamburger-container"></div>
-         <button class="burger-bt"  
-            js-open-menu"
+
+       <!-- mobile part -->
+<div class="hamburger-container">
+         <button class="burger-bt js-open-menu"
           aria-expanded="false"
-          aria-controls="navbar"
+          aria-controls="mobile-menu"
         >
-          <svg
+          <svg class="hamburger-menu-icon"
             width="32"
-            height="24"
-            fill="currentColor"
-        
-          >
+            height="22"
+            fill="currentColor" >
             <use href="./images/burgericons.svg#icon-menu2">
             </use>
-
           </svg>
         </button>
-        <ul class="hamburger-menu lists">
-            <li><a href="./index.html" class="link">Studio</a></li>
-            <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-            <li><a href="./contacts.html" class="link">Contacts</a></li>
         
-            </ul>
-             </ul>
         </div>
         </div>
     </header>
@@ -552,26 +543,67 @@
 
       </div>
     </div>
-    <div class="menu-container js-menu-container" id="navbar">
-<button class="burger-bt"  
-            js-close-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="32"
-            height="24"
-            fill="currentColor"
-        
-          >
-            <use href="./images/burgericons.svg#icon-menu2">
-            </use>
 
-          </svg>
+    <!-- Mobile part -->
 
-        </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-icon" width="11" height="11">
+          <use href="./images/icons.svg#close-button"></use>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu list-item">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="hamburger-menu-link link-active">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="hamburger-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./contacts.html" class="hamburger-menu-link">Contacts</a>
+        </li>
+
+        <ul class="mobile-contact-link list-item">
+          <li class="mobile-contact-item">
+            <a href="tel:+110001111111" class="hamburger-contact-link">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-contact-item">
+            <a href="mailto:info@devstudio.com" class="hamburger-contact-link email-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-social-list list-item">
+          <li class="mobile-social-item">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+              ><svg class="icon footer-social-profile" width="40" height="40">
+                <use href="./images/icons.svg#footer-instagram-icon"></use></svg
+            ></a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              ><svg class="icon footer-social-profile" width="40" height="40">
+                <use href="./images/icons.svg#footer-twitter-icon"></use></svg
+            ></a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              ><svg class="icon footer-social-profile" width="40" height="40">
+                <use href="./images/icons.svg#footer-facebook-icon"></use></svg
+            ></a>
+          </li>
+          <li class="mobile-social-item">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              ><svg class="icon footer-social-profile" width="40" height="40">
+                <use href="./images/icons.svg#footer-linkedin-icon"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </ul>
     </div>
+    
     
     <script
       defer
