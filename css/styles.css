@@ -1138,7 +1138,7 @@ a {
 .menu-container.is-open {
   transform: translateX(0);
 }
-.menu-container .menu-toggle {
+.menu-container .burger-bt {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -1196,7 +1196,7 @@ a {
 }
 
 .hamburger-contact-link {
-  font-family: var(--font-family-roboto);
+  font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -1269,12 +1269,13 @@ a {
   background-color: green;
 }
 
+/* Mobile Responsive */
 @media screen and (min-width: 320px) {
   .section {
     width: 100%;
   }
 }
-
+/* Tablet Responsive */
 @media (max-width: 1158px) {
   .current-hov::after {
     top: 57px;

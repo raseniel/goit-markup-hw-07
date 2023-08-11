@@ -65,7 +65,9 @@
 <path d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8v0c-4.418 0-8 3.582-8 8s3.582 8 8 8v0zM16 20c-5.339 0-16 2.68-16 8v2c0 1.099 0.901 2 2 2h28c1.099 0
     </symbol>
 
-
+<symbol id="hamburger" viewBox="0 0 47 32">
+<path d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 
    </defs>
 </svg>
