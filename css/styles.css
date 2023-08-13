@@ -224,7 +224,7 @@ a {
   border-radius: 2px;
 }
 
-/* Studio Hero Section Styling */
+/* Studio Hero Section  */
 .hero {
   background-image: linear-gradient(
       0deg,
@@ -276,7 +276,7 @@ a {
   background-color: var(--ocean-color);
 }
 
-/* Studio Section 2 Styling */
+/* Studio Section 2 */
 .benefits {
   display: flex;
   flex-direction: row;
@@ -349,7 +349,7 @@ a {
   margin-left: 24px;
 }
 
-/* Our Team Section Styling */
+/* Our Team Section  */
 .our-team_list {
   display: flex;
   flex-wrap: wrap;
@@ -433,7 +433,7 @@ a {
   fill: var(--cloud-color);
 }
 
-/* Customer Section Styling */
+/* Customer Section */
 .customer-client-list {
   display: flex;
   flex-wrap: wrap;
@@ -465,7 +465,7 @@ a {
   fill: currentColor;
 }
 
-/* Portfolio Page Styling */
+/* Portfolio Page */
 .tab-menu-section {
   padding-top: 96px;
 }
@@ -594,8 +594,7 @@ a {
   transform: translateY(0);
 }
 
-/* Modal */
-/* Modal Popup Styling */
+/* Modal Section*/
 .backdrop {
   position: fixed;
   z-index: 999999999;
@@ -739,6 +738,10 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.agreement-text {
+  margin-left: 10px;
+}
+
 .modal-checkbox-container {
   display: flex;
   align-items: flex-start;
@@ -760,27 +763,54 @@ a {
   margin-top: 24px;
 }
 
-.checkbox-container {
-  position: relative;
+.agree-newsletter {
+  display: block;
+
+  margin-bottom: 30px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: #8e8f99;
+}
+
+.checkbox {
+  appearance: none;
+  margin-left: -22px;
+}
+
+.checkbox-icon {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   width: 16px;
   height: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  vertical-align: sub;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-mark {
-  display: flex;
-  justify-content: flex-start;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: transparent;
-  align-items: flex-start;
-  border-radius: 2px;
+.check-mark {
+  display: block;
+  width: 10px;
+  height: 10px;
+  fill: #fcfcfc var(--cloud);
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-size: contain;
+
+  background-color: #404bbf;
+  border-color: #404bbf;
 }
 
 .agreement-link {
@@ -812,7 +842,7 @@ a {
   font-weight: 400;
   letter-spacing: 0.48px;
   position: absolute;
-  top: -20px;
+  top: -22px;
 }
 
 .modal-button {
@@ -843,7 +873,7 @@ a {
   background-color: var(--ocean-color);
 }
 
-/* Footer Styling */
+/* Footer Section */
 .footer {
   background-color: var(--navy-blue-color);
   padding: 100px 0;
@@ -1010,7 +1040,7 @@ a {
   display: flex;
 }
 
-/* Responsive */
+/* Media query Responsive */
 
 .menu-toggle {
   position: relative;
@@ -1185,16 +1215,14 @@ a {
   background-color: var(--green-color);
 }
 
-/* End of Hamburger Menu */
-
-/* Responsive Layout */
+/* Media query Mobile Responsive */
 @media screen and (min-width: 320px) {
   .section {
     width: 100%;
   }
 }
 
-/* Tablet  */
+/* Media Query Tablet Responsive  */
 @media (max-width: 1158px) {
   .navigation-menu_link::after {
     top: 57px;
@@ -1465,7 +1493,7 @@ a {
     margin-bottom: 72px;
   }
 
-  /* Porfolio Page */
+  /* Porfolio Media Query Page */
   .tab-menu-section {
     padding: 48px 0;
   }
@@ -1486,7 +1514,7 @@ a {
     justify-content: center;
   }
 
-  /* Footer */
+  /* Footer Media Query */
   .footer {
     padding: 96px 0;
     display: flex;
@@ -1559,7 +1587,7 @@ a {
     width: 100%;
   }
 
-  /* Menu */
+  /* Responsive Menu */
   .menu-container {
     width: 100vw;
     height: 100vh;
@@ -1619,10 +1647,6 @@ a {
     width: 100%;
   }
 
-  .checkbox-mark {
-    display: none;
-  }
-
   .mobile-social-item:not(:last-child) {
     margin-right: 25px;
   }
@@ -1634,7 +1658,6 @@ a {
   }
 }
 
-/* Hide Scroll */
 @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
@@ -1643,5 +1666,8 @@ a {
 
   .our-team_social-list {
     flex-wrap: nowrap;
+  }
+  .agreement-text {
+    max-width: 100%;
   }
 }

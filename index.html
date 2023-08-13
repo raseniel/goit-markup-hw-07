@@ -71,7 +71,7 @@
             aria-controls="mobile-menu"
           >
             <svg class="hamburger-menu-icon" width="32" height="22">
-              <use href="./images/icons.svg##hamburger"></use>
+              <use href="./images/icons.svg#hamburger"></use>
             </svg>
           </button>
         </div>
@@ -101,7 +101,7 @@
             <li class="benefits_item benefits_item_tablet-view">
               <div class="benefits-icon-container">
                 <svg class="icon benefits-icon" width="64" height="64">
-                  <use href="./images/icons.svg##antenna"></use>
+                  <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="benefits-title">Strategy</h3>
@@ -137,7 +137,7 @@
             <li class="benefits_item benefits_item_tablet-view">
               <div class="benefits-icon-container">
                 <svg class="icon benefits-icon" width="64" height="64">
-                  <use href="./images/icons.svgastronaut"></use>
+                  <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
               <h3 class="benefits-title">Technologies</h3>
@@ -637,9 +637,12 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-content-form">
-          <!-- Data forms Sections -->
+
+        <!-- Data forms Sections -->
+        <form method="GET" class="modal-content-form">
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
 
           <div class="form-column-1">
             <label class="modal-description-label">
@@ -650,6 +653,7 @@
                 class="input-container"
                 autofocus
               />
+
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-Vector-name"></use>
               </svg>
@@ -668,7 +672,7 @@
                 <use href="./images/icons.svg#icon-vector-mail"></use>
               </svg>
             </label>
-            <label class="modal-description-label">
+            <label class="modal-description-label inscription-textarea">
               <span class="label-text">Comment</span>
               <textarea
                 name="comment"
@@ -710,7 +714,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="close-icon" width="11" height="11">
-          <use href="./images/icons.svg#close-button"></use>
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
 
