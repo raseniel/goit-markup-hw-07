@@ -266,6 +266,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.64px;
   border: none;
+  cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -481,6 +482,7 @@ a {
   font-family: var(--font-family-roboto);
   font-size: var(--paragraph-text-size);
   line-height: 1.5;
+  cursor: pointer;
   transition-property: background-color, color, box-shadow, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -970,7 +972,7 @@ a {
 .column3-container {
   width: 45%;
   padding: 0;
-  margin: 0;
+  margin-left: 80px;
 }
 
 .footer-subscribe-text {
@@ -998,7 +1000,7 @@ a {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.64px;
-
+  cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1094,8 +1096,10 @@ a {
 }
 
 .mobile-menu .link {
-  display: block;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  /* display: block; */
+  /* padding: 10px; */
   color: #fff;
   text-decoration: none;
 }
@@ -1623,6 +1627,9 @@ a {
   .mobile-contact-item:not(:last-child) {
     margin-bottom: 20px;
   }
+  .hamburger-menu-link:focus {
+    color: var(--iris-color);
+  }
 }
 
 @media screen and (max-width: 428px) {
@@ -1649,6 +1656,32 @@ a {
 
   .mobile-social-item:not(:last-child) {
     margin-right: 25px;
+  }
+  .mobile-contact-link {
+    display: block;
+    justify-content: center;
+    margin-top: 245px;
+  }
+
+  .contact-link-size {
+    justify-content: center;
+    font-size: 36px;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: var(--ocean-color);
+  }
+
+  .email-link {
+    font-size: 20px;
+    text-align: center;
+  }
+  .mobile-social-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 15vw;
   }
 }
 
