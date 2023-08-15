@@ -1118,6 +1118,10 @@ a {
   .menu-toggle {
     display: none;
   }
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: var(--ocean-color);
+  }
 }
 
 /* Hamburger Menu*/
@@ -1327,6 +1331,17 @@ a {
   }
 
   /* Portfolio Section */
+
+  .project {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+
   .tab-menu-section {
     padding: 64px 0 96px;
   }
@@ -1521,6 +1536,7 @@ a {
   /* Footer Media Query */
   .footer {
     padding: 96px 0;
+
     display: flex;
     flex-wrap: wrap;
   }
