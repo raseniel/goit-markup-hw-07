@@ -1331,15 +1331,14 @@ a {
   }
 
   /* Portfolio Section */
-
-  .project {
-    justify-content: flex-start;
-  }
 }
 
 @media (max-width: 480px) {
   .container {
     width: 480px;
+  }
+  .project {
+    justify-content: flex-start;
   }
 
   .tab-menu-section {
