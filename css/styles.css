@@ -1417,7 +1417,7 @@ a {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1158px) {
   .navigation-menu,
   .contact-links {
     display: none;
@@ -1428,7 +1428,7 @@ a {
   }
 
   .container {
-    width: 480px;
+    width: 100%;
   }
 
   .section {
@@ -1529,7 +1529,7 @@ a {
   }
 
   .project {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   /* Footer Media Query */
