@@ -1042,7 +1042,7 @@ a {
   display: flex;
 }
 
-/* Media query Responsive */
+/* Media Query - Responsive */
 
 .menu-toggle {
   position: relative;
@@ -1096,10 +1096,8 @@ a {
 }
 
 .mobile-menu .link {
-  display: flex;
-  justify-content: center;
-  /* display: block; */
-  /* padding: 10px; */
+  display: block;
+  padding: 10px;
   color: #fff;
   text-decoration: none;
 }
@@ -1118,13 +1116,9 @@ a {
   .menu-toggle {
     display: none;
   }
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: var(--ocean-color);
-  }
 }
 
-/* Hamburger Menu*/
+/* Media Query - Hamburger Menu*/
 .hamburger-menu-link {
   font-family: var(--font-family-roboto);
   font-size: 36px;
@@ -1166,6 +1160,9 @@ a {
   color: var(--ocean-color);
 }
 
+.email-link {
+  width: 240px;
+}
 .mobile-contact-link {
   margin-top: 284px;
 }
@@ -1187,7 +1184,7 @@ a {
 }
 
 .email-link:focus {
-  color: var(--iris-color);
+  color: #434455;
 }
 
 .mobile-menu-social-list {
@@ -1223,14 +1220,14 @@ a {
   background-color: var(--green-color);
 }
 
-/* Media query Mobile Responsive */
+/* Mobile - Responsive Media Query */
 @media screen and (min-width: 320px) {
   .section {
     width: 100%;
   }
 }
 
-/* Media Query Tablet Responsive  */
+/* Tablet - Resposive Media Query  */
 @media (max-width: 1158px) {
   .navigation-menu_link::after {
     top: 57px;
@@ -1330,17 +1327,7 @@ a {
     margin-bottom: 72px;
   }
 
-  /* Portfolio Section */
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 480px;
-  }
-  .project {
-    justify-content: flex-start;
-  }
-
+  /* Portfolio Section - Media Query Responsive */
   .tab-menu-section {
     padding: 64px 0 96px;
   }
@@ -1362,7 +1349,7 @@ a {
     margin-bottom: 72px;
   }
 
-  /* Footer Section */
+  /* Footer Section - Media Query Responsive*/
   .footer {
     padding: 96px 0;
     display: flex;
@@ -1417,7 +1404,7 @@ a {
   }
 }
 
-@media (max-width: 1158px) {
+@media (max-width: 767px) {
   .navigation-menu,
   .contact-links {
     display: none;
@@ -1511,7 +1498,7 @@ a {
     margin-bottom: 72px;
   }
 
-  /* Porfolio Media Query Page */
+  /* Porfolio Page - Media Query Responsive */
   .tab-menu-section {
     padding: 48px 0;
   }
@@ -1532,10 +1519,9 @@ a {
     justify-content: flex-start;
   }
 
-  /* Footer Media Query */
+  /* Footer */
   .footer {
     padding: 96px 0;
-
     display: flex;
     flex-wrap: wrap;
   }
@@ -1606,19 +1592,14 @@ a {
     width: 100%;
   }
 
-  /* Responsive Menu */
+  /* Menu */
   .menu-container {
     width: 100vw;
     height: 100vh;
   }
-
-  .mobile-contact-item {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
-@media (max-width: 583px) {
+@media (max-width: 428px) {
   .our-team-list_item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -1632,9 +1613,32 @@ a {
   }
 
   .hamburger-contact-link {
-    font-size: 25px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
+  .mobile-contact-link {
+    margin-top: 225px;
+  }
+  .email-link {
+    font-size: 18px;
+  }
+  .mobile-social-item {
+    padding-left: 40px;
+  }
+
+  .mobile-social-item {
+    display: flex;
+    justify-content: center;
+    width: 18vw;
+  }
+
+  .mobile-contact-link {
+    flex-wrap: wrap;
+  }
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -1642,8 +1646,12 @@ a {
   .mobile-contact-item:not(:last-child) {
     margin-bottom: 20px;
   }
-  .hamburger-menu-link:focus {
-    color: var(--iris-color);
+
+  .mobile-contact-tem {
+    padding-left: 40px;
+  }
+  .mobile-menu-item {
+    padding-left: 40px;
   }
 }
 
@@ -1660,7 +1668,7 @@ a {
     padding: 16px;
   }
 
-  /* Modal */
+  /* Modal - Media Query */
   .backdrop {
     padding: 0 16px;
   }
@@ -1669,34 +1677,12 @@ a {
     width: 100%;
   }
 
+  .checkbox-mark {
+    display: none;
+  }
+
   .mobile-social-item:not(:last-child) {
     margin-right: 25px;
-  }
-  .mobile-contact-link {
-    display: block;
-    justify-content: center;
-    margin-top: 245px;
-  }
-
-  .contact-link-size {
-    justify-content: center;
-    font-size: 36px;
-  }
-
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    background-color: var(--ocean-color);
-  }
-
-  .email-link {
-    font-size: 20px;
-    text-align: center;
-  }
-  .mobile-social-item {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 15vw;
   }
 }
 
@@ -1706,6 +1692,7 @@ a {
   }
 }
 
+/* Hide Scroll */
 @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
@@ -1714,8 +1701,5 @@ a {
 
   .our-team_social-list {
     flex-wrap: nowrap;
-  }
-  .agreement-text {
-    max-width: 100%;
   }
 }
