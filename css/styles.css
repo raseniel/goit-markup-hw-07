@@ -1716,3 +1716,12 @@ a {
     padding-left: 108px;
   }
 }
+
+@media (min-width: 767px) {
+  .port-footer-container {
+    display: flex;
+  }
+  .port-footer-text {
+    margin-right: -10px;
+  }
+}
