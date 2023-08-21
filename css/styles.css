@@ -1351,7 +1351,7 @@ a {
 
   /* Footer Section - Media Query Responsive*/
   .footer {
-    padding: 16px 0;
+    padding: 96px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1362,7 +1362,7 @@ a {
     justify-self: flex-start;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 108px;
+    padding: 0;
   }
 
   .column1-container {
@@ -1379,7 +1379,6 @@ a {
   .footer-text {
     display: flex;
     justify-content: left;
-    width: 264vw;
   }
 
   .column2-container {
@@ -1389,13 +1388,11 @@ a {
 
   .footer-social-text {
     text-align: left;
-    margin-left: 10px;
   }
 
   .footer-social-icon {
     display: flex;
     justify-content: flex-start;
-    margin-left: 10px;
   }
 
   .footer-form {
@@ -1417,6 +1414,9 @@ a {
     display: block;
   }
 
+  .footer-text {
+    display: flex;
+  }
   .container {
     width: 100%;
   }
@@ -1602,7 +1602,7 @@ a {
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 583px) {
   .our-team-list_item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -1616,45 +1616,15 @@ a {
   }
 
   .hamburger-contact-link {
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 25px;
   }
 
-  .mobile-contact-link {
-    margin-top: 225px;
-  }
-  .email-link {
-    font-size: 18px;
-  }
-  .mobile-social-item {
-    padding-left: 40px;
-  }
-
-  .mobile-social-item {
-    display: flex;
-    justify-content: center;
-    width: 18vw;
-  }
-
-  .mobile-contact-link {
-    flex-wrap: wrap;
-  }
   .mobile-menu-item:not(:last-child) {
     margin-bottom: 20px;
   }
 
   .mobile-contact-item:not(:last-child) {
     margin-bottom: 20px;
-  }
-
-  .mobile-contact-tem {
-    padding-left: 40px;
-  }
-  .mobile-menu-item {
-    padding-left: 40px;
   }
 }
 
@@ -1704,5 +1674,45 @@ a {
 
   .our-team_social-list {
     flex-wrap: nowrap;
+  }
+}
+
+/* Mobile and Tablet response */
+@media (min-width: 720px) {
+  .column1-container {
+    margin-bottom: 72px;
+    width: 50%;
+  }
+  @media (max-width: 1024px) {
+    .column1-container {
+      padding-left: 108px;
+    }
+  }
+  .column2-container {
+    padding-left: 10px;
+  }
+  .column3-container {
+    padding-left: 108px;
+  }
+}
+
+@media (min-width: 320px) {
+  .mobile-contact-link {
+    margin-top: 245px;
+  }
+  .mobile-menu-item {
+    padding-left: 40px;
+  }
+  .mobile-contact-item {
+    padding-left: 40px;
+  }
+  .mobile-social-item {
+    padding-left: 40px;
+  }
+  .contact-link-size {
+    font-size: 36px;
+  }
+  .email-link {
+    font-size: 20px;
   }
 }
