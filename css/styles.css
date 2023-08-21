@@ -1679,10 +1679,6 @@ a {
 
 /* Mobile and Tablet response */
 @media (min-width: 720px) {
-  .column1-container {
-    margin-bottom: 72px;
-    width: 50%;
-  }
   @media (max-width: 1024px) {
     .column1-container {
       padding-left: 108px;
