@@ -1687,9 +1687,6 @@ a {
   .column2-container {
     padding-left: 10px;
   }
-  .column3-container {
-    padding-left: 108px;
-  }
 }
 
 @media (min-width: 320px) {
@@ -1710,5 +1707,12 @@ a {
   }
   .email-link {
     font-size: 20px;
+  }
+}
+
+/* Tablet Footer Media Query - Studio Page */
+@media (min-width: 768px) and (max-width: 1158px) {
+  .column3-container {
+    padding-left: 108px;
   }
 }
